@@ -18,36 +18,6 @@
             endingLineNumber = "22"
             landmarkName = "application(_:didDiscardSceneSessions:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E8E5386D-9DED-45FB-9C8D-9DD9FDA0E041 - cccc924bdc32a431"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HelloWorld.AppDelegate.application(_: __C.UIApplication, configurationForConnecting: __C.UISceneSession, options: __C.UISceneConnectionOptions) -&gt; __C.UISceneConfiguration"
-                  moduleName = "HelloWorld.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexandershprits/Desktop/%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/HelloWorld/HelloWorld/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25">
-               </Location>
-               <Location
-                  uuid = "E8E5386D-9DED-45FB-9C8D-9DD9FDA0E041 - 4add8238de9c3e4f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HelloWorld.AppDelegate.application(_: __C.UIApplication, didDiscardSceneSessions: Swift.Set&lt;__C.UISceneSession&gt;) -&gt; ()"
-                  moduleName = "HelloWorld.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexandershprits/Desktop/%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/HelloWorld/HelloWorld/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
