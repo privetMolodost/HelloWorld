@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,50 +13,73 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZi-Ap-WFH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="PbZ-dT-5oC">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OsO-iP-gZR">
-                                <rect key="frame" x="20" y="60" width="280" height="230"/>
-                                <viewLayoutGuide key="safeArea" id="sPt-PH-nOm"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                            </view>
-                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVW-y1-zCx">
-                                <rect key="frame" x="20" y="298" width="280" height="230"/>
-                                <viewLayoutGuide key="safeArea" id="4Z8-Ej-wzW"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tZs-xp-QQ0">
+                                <rect key="frame" x="16" y="222" width="408" height="56.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" name="AccentColor"/>
+                                <color key="shadowColor" name="AccentColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuB-co-Qd3">
+                                <rect key="frame" x="114.66666666666669" y="639.66666666666663" width="211" height="52"/>
+                                <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="207" id="srg-Qc-bs4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="9" maxX="16" maxY="9"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Show Greeting">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="greetingButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WX4-UX-3Ok"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6l4-3V-LjM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="HUz-Ha-yCD"/>
+                        <color key="backgroundColor" systemColor="tableSeparatorLightColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6l4-3V-LjM" firstAttribute="bottom" secondItem="AVW-y1-zCx" secondAttribute="bottom" constant="40" id="53q-9K-rpv"/>
-                            <constraint firstItem="AVW-y1-zCx" firstAttribute="leading" secondItem="6l4-3V-LjM" secondAttribute="leading" constant="20" id="DOh-Uz-ryA"/>
-                            <constraint firstItem="6l4-3V-LjM" firstAttribute="trailing" secondItem="AVW-y1-zCx" secondAttribute="trailing" constant="20" id="EAJ-PS-aVT"/>
-                            <constraint firstItem="AVW-y1-zCx" firstAttribute="top" secondItem="OsO-iP-gZR" secondAttribute="bottom" constant="8" symbolic="YES" id="LV6-sF-boK"/>
-                            <constraint firstItem="6l4-3V-LjM" firstAttribute="trailing" secondItem="OsO-iP-gZR" secondAttribute="trailing" constant="20" id="N3m-wO-PuQ"/>
-                            <constraint firstItem="OsO-iP-gZR" firstAttribute="leading" secondItem="6l4-3V-LjM" secondAttribute="leading" constant="20" id="W9l-8w-33u"/>
-                            <constraint firstItem="AVW-y1-zCx" firstAttribute="height" secondItem="OsO-iP-gZR" secondAttribute="height" id="XVw-Db-sbZ"/>
-                            <constraint firstItem="AVW-y1-zCx" firstAttribute="width" secondItem="OsO-iP-gZR" secondAttribute="width" id="p30-s7-6sj"/>
-                            <constraint firstItem="OsO-iP-gZR" firstAttribute="top" secondItem="6l4-3V-LjM" secondAttribute="top" constant="40" id="uvk-JE-eEA"/>
+                            <constraint firstItem="tZs-xp-QQ0" firstAttribute="leading" secondItem="HUz-Ha-yCD" secondAttribute="leading" constant="16" id="3e0-wr-Jd6"/>
+                            <constraint firstItem="HUz-Ha-yCD" firstAttribute="trailing" secondItem="tZs-xp-QQ0" secondAttribute="trailing" constant="16" id="8uh-jX-JtK"/>
+                            <constraint firstItem="tZs-xp-QQ0" firstAttribute="leading" secondItem="HUz-Ha-yCD" secondAttribute="leading" constant="16" id="AvO-E5-Kyo"/>
+                            <constraint firstItem="HUz-Ha-yCD" firstAttribute="trailing" secondItem="tZs-xp-QQ0" secondAttribute="trailing" constant="16" id="FbN-L7-Gjf"/>
+                            <constraint firstItem="HUz-Ha-yCD" firstAttribute="bottom" secondItem="QuB-co-Qd3" secondAttribute="bottom" multiplier="4:3" id="ZdW-Zz-PrE"/>
+                            <constraint firstItem="tZs-xp-QQ0" firstAttribute="top" secondItem="HUz-Ha-yCD" secondAttribute="top" constant="160" id="eGS-EN-MyR"/>
+                            <constraint firstItem="QuB-co-Qd3" firstAttribute="centerX" secondItem="PbZ-dT-5oC" secondAttribute="centerX" id="og3-RP-jQJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingButton" destination="QuB-co-Qd3" id="3lK-Uw-T8a"/>
+                        <outlet property="greetingLabel" destination="tZs-xp-QQ0" id="wkj-kP-0AZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.363636363636367" y="-2.510460251046025"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="secondaryLabelColor"/>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tableSeparatorLightColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
